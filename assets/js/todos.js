@@ -27,13 +27,13 @@ $('ul').on('click', 'li', function() {
 // buatlah jquery untuk menekan tombol akan menjadikan data sebagai list
 $('#plus').on('click', function(){
   if ($('#todo-input').val() != null && $('#todo-input').val() != '') {
-    let myInput = $('#todo-input').val();
-    let isiHtml = `
+    let input = $('#todo-input').val();
+    let html = `
     <li>
-    <span><i class="fa fa-trash"></i></span> ${myInput}
+    <span><i class="fa fa-trash"></i></span> ${input}
     </li>
     `;
-    $('#todos').append(isiHtml);
+    $('#todos').append(html);
     $('#todo-input').val('');
   }
 })
